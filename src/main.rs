@@ -5,7 +5,8 @@
 // mod l5_loop_while_for;
 // mod l6_ownership_references;
 // mod l7_slice;
-mod l8_struct;
+// mod l8_struct;
+mod l9_enum;
 
 fn main() {
     // игра-угадайка
@@ -54,6 +55,16 @@ fn main() {
     // структуры
     // l8_struct::exmpl_1();
     // l8_struct::exmpl_2();
-    l8_struct::exmpl_3();
+    // l8_struct::exmpl_3();
+
+    // методы структуры
+    // l8_struct::exmpl_4();
+
+    // ассоциированные функции структуры
+    // l8_struct::exmpl_5();
+
+    // перечисления (enum)
+    // l9_enum::exmpl_1();
+    l9_enum::exmpl_2();
 
 }

@@ -45,9 +45,53 @@ pub fn exmpl_3() {
     let green = Color(0, 255, 0);
     let origin = Point(0, 1, 2);
 
-    let r = green.0;
-    let g = green.1;
-    let b = green.2;
+    // let r = green.0;
+    // let g = green.1;
+    // let b = green.2;
+    // println!("RGB: ({r}, {g}, {b})");
 
-    println!("RGB: ({r}, {g}, {b})");
+    println!("RGB: ({}, {}, {})", green.0, green.1, green.2);
+}
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
+
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
+pub fn exmpl_4() {
+    let scale = 2;
+    // dbg!(scale);
+    let rect_1 = Rectangle {
+        // width: 30,
+        width: dbg!(30 * scale),
+        height: 50,
+    };
+
+    // println!("The area of the rectangle is {} square pixels.", area(&rect_1));
+    println!("The area of the rectangle is {} square pixels.", rect_1.area());
+    // println!("rect_1 is {rect_1:#?}.");
+    // dbg!(&rect_1);
+}
+
+fn area(rect: &Rectangle) -> u32 {
+    rect.width * rect.height
+}
+
+pub fn exmpl_5() {
+    let rect_1 = Rectangle::square(10);
+    println!("The area of the rectangle is {} square pixels.", rect_1.area());
 }
