@@ -9,9 +9,15 @@
 mod l9_enum;
 
 fn main() {
+    // The Rust Programming Language
+    // https://doc.rust-lang.org/book/
+
     // игра-угадайка
+    // https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
     // l1_game_example::game();
 
+    // общие концепции программирования
+    // https://doc.rust-lang.org/book/ch03-00-common-programming-concepts.html
     // кортеж и массив
     // l2_tuple_and_array::exmpl();
 
@@ -33,6 +39,8 @@ fn main() {
     // цикл for
     // l5_loop_while_for::exmpl_3();
 
+    // владение (ownership)
+    // https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
     // разница между строковым литералом и типом String
     // строковой литерал, обладая известным размером и неизменяемостью использует стек
     // а тип String дает возможность изменять текст и размер текста неизвестен, поэтому используется куча
@@ -53,6 +61,7 @@ fn main() {
     // l7_slice::exmpl_3();
 
     // структуры
+    // https://doc.rust-lang.org/book/ch05-00-structs.html
     // l8_struct::exmpl_1();
     // l8_struct::exmpl_2();
     // l8_struct::exmpl_3();
@@ -64,6 +73,7 @@ fn main() {
     // l8_struct::exmpl_5();
 
     // перечисления (enum)
+    // https://doc.rust-lang.org/book/ch06-00-enums.html
     // l9_enum::exmpl_1();
     l9_enum::exmpl_2();
 

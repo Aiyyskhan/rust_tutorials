@@ -23,3 +23,18 @@ pub fn exmpl_2() {
 
     println!("{ip_v4:?}, {ip_v6:?}");
 }
+
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    Color(u8, u8, u8),
+}
+
+impl Message {
+    //
+}
+
+pub fn exmpl_3() {
+    //
+}
