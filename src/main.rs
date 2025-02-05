@@ -75,6 +75,10 @@ fn main() {
     // перечисления (enum)
     // https://doc.rust-lang.org/book/ch06-00-enums.html
     // l9_enum::exmpl_1();
-    l9_enum::exmpl_2();
+    // l9_enum::exmpl_2();
+    // l9_enum::exmpl_3();
+
+    // enum Option
+    l9_enum::exmpl_4();
 
 }

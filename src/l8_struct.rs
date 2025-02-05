@@ -80,7 +80,7 @@ pub fn exmpl_4() {
         width: dbg!(30 * scale),
         height: 50,
     };
-
+    // вызов метода
     // println!("The area of the rectangle is {} square pixels.", area(&rect_1));
     println!("The area of the rectangle is {} square pixels.", rect_1.area());
     // println!("rect_1 is {rect_1:#?}.");
@@ -92,6 +92,7 @@ fn area(rect: &Rectangle) -> u32 {
 }
 
 pub fn exmpl_5() {
+    // вызов ассоциированной функции
     let rect_1 = Rectangle::square(10);
     println!("The area of the rectangle is {} square pixels.", rect_1.area());
 }
