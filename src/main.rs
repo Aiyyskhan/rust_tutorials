@@ -79,6 +79,8 @@ fn main() {
     // l9_enum::exmpl_3();
 
     // enum Option
-    l9_enum::exmpl_4();
+    // l9_enum::exmpl_4();
+
+    l9_enum::exmpl_5();
 
 }

@@ -96,3 +96,38 @@ pub fn exmpl_4() {
     let y = x.and_then(|v| if v > 3 { Some(v * 2) } else { None });
     println!("{:?}", y); // Some(10)
 }
+
+#[derive(Debug)]
+enum USState {
+    Alabama,
+    Alaska,
+}
+
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter(USState),
+}
+
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter(state) => {
+            println!("State quarter from {state:?}!");
+            25
+        }
+    }
+}
+
+pub fn exmpl_5() {
+    let coin_1 = Coin::Penny;
+    let coin_2 = Coin::Quarter(USState::Alaska);
+
+    let mut v = value_in_cents(coin_1);
+    println!("Value: {v}");
+    v = value_in_cents(coin_2);
+    println!("Value: {v}");
+}
